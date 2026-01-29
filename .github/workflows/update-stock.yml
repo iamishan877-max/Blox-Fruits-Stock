@@ -2,7 +2,7 @@ name: Auto Update Blox Fruits Stock
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 minutes
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -18,8 +18,9 @@ jobs:
 
       - name: Install Playwright
         run: |
+          npm init -y
           npm install playwright
-          npx playwright install chromium
+          npx playwright install --with-deps chromium
 
       - name: Update stock JSON
         run: node scripts/updateStock.js
@@ -31,3 +32,4 @@ jobs:
           git add data/stock.json
           git commit -m "Update stock" || echo "No changes"
           git push
+
