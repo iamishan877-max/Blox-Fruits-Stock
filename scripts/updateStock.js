@@ -14,46 +14,63 @@ const URL = "https://www.gamersberg.com/blox-fruits/stock";
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
   });
 
-  // Navigate without networkidle
+  let stockData = null;
+
+  // Listen for API responses
+  page.on("response", async (response) => {
+    const url = response.url();
+
+    if (url.includes("/api") && url.includes("blox")) {
+      try {
+        const json = await response.json();
+        if (json?.data) {
+          stockData = json;
+        }
+      } catch {}
+    }
+  });
+
   await page.goto(URL, {
     waitUntil: "domcontentloaded",
     timeout: 60000
   });
 
-  // Wait for ANY fruit card to appear
-  await page.waitForSelector(".fruit-card", {
-    timeout: 60000
-  });
-
-  const stock = await page.evaluate(() => {
-    const read = (tab) => {
-      return Array.from(
-        document.querySelectorAll(`[data-tab="${tab}"] .fruit-card`)
-      )
-        .map(card => {
-          const name =
-            card.querySelector(".fruit-name")?.innerText?.trim();
-          const price =
-            card.querySelector(".fruit-price")?.innerText?.trim();
-
-          if (!name || !price) return null;
-          return { name, price };
-        })
-        .filter(Boolean);
-    };
-
-    return {
-      normal: read("normal"),
-      mirage: read("mirage")
-    };
-  });
+  // Give the page time to fire API requests
+  await page.waitForTimeout(15000);
 
   await browser.close();
 
+  if (!stockData) {
+    throw new Error("Stock API not captured");
+  }
+
+  // Normalize data
+  const normal = [];
+  const mirage = [];
+
+  for (const block of stockData.data) {
+    if (block.normalStock) {
+      for (const f of block.normalStock) {
+        normal.push({
+          name: f.name,
+          price: f.price
+        });
+      }
+    }
+    if (block.mirageStock) {
+      for (const f of block.mirageStock) {
+        mirage.push({
+          name: f.name,
+          price: f.price
+        });
+      }
+    }
+  }
+
   const output = {
     updated_at: new Date().toISOString(),
-    normal: stock.normal,
-    mirage: stock.mirage
+    normal,
+    mirage
   };
 
   fs.writeFileSync(
