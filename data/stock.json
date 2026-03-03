@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03T17:26:45.863Z",
+  "updated_at": "2026-03-03T18:08:17.813Z",
   "normal": [
     {
       "name": "Rocket-Rocket",
@@ -36,24 +36,24 @@
       "price": 7500
     },
     {
-      "name": "Bomb-Bomb",
-      "price": 80000
+      "name": "Smoke-Smoke",
+      "price": 100000
     },
     {
-      "name": "Dark-Dark",
-      "price": 500000
+      "name": "Spike-Spike",
+      "price": 180000
+    },
+    {
+      "name": "Ice-Ice",
+      "price": 350000
+    },
+    {
+      "name": "Sand-Sand",
+      "price": 420000
     },
     {
       "name": "Eagle-Eagle",
       "price": 550000
-    },
-    {
-      "name": "Love-Love",
-      "price": 1300000
-    },
-    {
-      "name": "Spider-Spider",
-      "price": 1500000
     }
   ]
 }
