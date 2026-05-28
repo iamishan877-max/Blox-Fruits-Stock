@@ -1,5 +1,51 @@
 {
-  "updated_at": "2026-05-28T19:58:30.253Z",
-  "normal": [],
-  "mirage": []
+  "updated_at": "2026-05-28T22:03:50.553Z",
+  "normal": [
+    {
+      "name": "Rocket-Rocket",
+      "price": 5000
+    },
+    {
+      "name": "Spin-Spin",
+      "price": 7500
+    },
+    {
+      "name": "Smoke-Smoke",
+      "price": 100000
+    },
+    {
+      "name": "Dark-Dark",
+      "price": 500000
+    }
+  ],
+  "mirage": [
+    {
+      "name": "Rocket-Rocket",
+      "price": 5000
+    },
+    {
+      "name": "Spin-Spin",
+      "price": 7500
+    },
+    {
+      "name": "Spring-Spring",
+      "price": 60000
+    },
+    {
+      "name": "Smoke-Smoke",
+      "price": 100000
+    },
+    {
+      "name": "Diamond-Diamond",
+      "price": 600000
+    },
+    {
+      "name": "Portal-Portal",
+      "price": 1900000
+    },
+    {
+      "name": "T-Rex-T-Rex",
+      "price": 2700000
+    }
+  ]
 }
