@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T23:17:34.854Z",
+  "updated_at": "2026-07-05T01:18:23.390Z",
   "normal": [
     {
       "name": "Rocket-Rocket",
@@ -10,16 +10,20 @@
       "price": 7500
     },
     {
-      "name": "Bomb-Bomb",
-      "price": 80000
+      "name": "Blade-Blade",
+      "price": 30000
     },
     {
-      "name": "Flame-Flame",
-      "price": 250000
+      "name": "Spring-Spring",
+      "price": 60000
     },
     {
-      "name": "Dark-Dark",
-      "price": 500000
+      "name": "Smoke-Smoke",
+      "price": 100000
+    },
+    {
+      "name": "Sand-Sand",
+      "price": 420000
     },
     {
       "name": "Light-Light",
@@ -36,28 +40,28 @@
       "price": 7500
     },
     {
-      "name": "Spring-Spring",
-      "price": 60000
+      "name": "Blade-Blade",
+      "price": 30000
     },
     {
       "name": "Bomb-Bomb",
       "price": 80000
     },
     {
+      "name": "Spike-Spike",
+      "price": 180000
+    },
+    {
       "name": "Flame-Flame",
       "price": 250000
     },
     {
-      "name": "Sand-Sand",
-      "price": 420000
+      "name": "Light-Light",
+      "price": 650000
     },
     {
-      "name": "Buddha-Buddha",
-      "price": 1200000
-    },
-    {
-      "name": "Creation-Creation",
-      "price": 1400000
+      "name": "Quake-Quake",
+      "price": 1000000
     }
   ]
 }
