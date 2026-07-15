@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-07-15T19:55:02.529Z",
+  "updated_at": "2026-07-15T21:08:13.130Z",
   "normal": [
+    {
+      "name": "Rocket-Rocket",
+      "price": 5000
+    },
+    {
+      "name": "Spin-Spin",
+      "price": 7500
+    },
+    {
+      "name": "Light-Light",
+      "price": 650000
+    }
+  ],
+  "mirage": [
     {
       "name": "Rocket-Rocket",
       "price": 5000
@@ -14,50 +28,36 @@
       "price": 30000
     },
     {
-      "name": "Eagle-Eagle",
-      "price": 550000
+      "name": "Spring-Spring",
+      "price": 60000
     },
     {
-      "name": "Light-Light",
-      "price": 650000
-    },
-    {
-      "name": "Creation-Creation",
-      "price": 1400000
-    }
-  ],
-  "mirage": [
-    {
-      "name": "Rocket-Rocket",
-      "price": 5000
-    },
-    {
-      "name": "Spin-Spin",
-      "price": 7500
+      "name": "Bomb-Bomb",
+      "price": 80000
     },
     {
       "name": "Smoke-Smoke",
       "price": 100000
     },
     {
-      "name": "Spike-Spike",
-      "price": 180000
-    },
-    {
       "name": "Flame-Flame",
       "price": 250000
     },
     {
-      "name": "Eagle-Eagle",
-      "price": 550000
+      "name": "Dark-Dark",
+      "price": 500000
     },
     {
-      "name": "Gravity-Gravity",
-      "price": 2500000
+      "name": "Light-Light",
+      "price": 650000
     },
     {
-      "name": "Mammoth-Mammoth",
-      "price": 2700000
+      "name": "Shadow-Shadow",
+      "price": 2900000
+    },
+    {
+      "name": "Spirit-Spirit",
+      "price": 3400000
     }
   ]
 }
